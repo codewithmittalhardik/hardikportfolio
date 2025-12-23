@@ -148,9 +148,9 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # Email Settings (Brevo / Sendinblue)
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp-relay.brevo.com'
-EMAIL_PORT = 587                   # <--- CHANGE TO 2525 (Fixes timeouts)
+EMAIL_PORT = 2525                   # <--- CHANGE TO 2525 (Fixes timeouts)
 EMAIL_USE_TLS = True
-# EMAIL_TIMEOUT = 30                  # Give it enough time
+EMAIL_TIMEOUT = 30                # Give it enough time
 EMAIL_HOST_USER = 'mittalhardik2007@gmail.com' # Your Login Email for Brevo
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD') # Brevo API Key
 

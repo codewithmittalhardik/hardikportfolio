@@ -1,0 +1,314 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Hardik Mittal - Python Developer specializing in Django and Machine Learning.">
+    <title>Hardik's Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="{% url 'index' %}" class="logo">Hardik.</a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="container hero-inner">
+            <div>
+                <h1>Hi, I'm <span style="color:var(--primary)">Hardik Mittal</span></h1>
+                <h3>Passionate Developer</h3>
+                <p class="hero-intro">
+                    I am a Python developer specializing in <strong>Django</strong>.
+                    I build scalable web applications and am currently exploring
+                    <strong>Machine Learning</strong> to bring data intelligence to the web.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn">Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    I am a backend-focused software developer with a strong command of Python. I specialize in
+                    building secure and efficient web systems using the Django framework. Driven by a curiosity for
+                    data and automation, I am actively expanding my skillset into Artificial Intelligence and
+                    Machine Learning to create smarter, data-driven solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skill"><i class="fa-brands fa-python"></i>
+                    <h4>Python</h4>
+                </div>
+                <div class="skill"><img src="{% static 'images/django.svg' %}" alt="Django">
+                    <h4>Django</h4>
+                </div>
+                <div class="skill"><img src="{% static 'images/flask.svg' %}" alt="Flask">
+                    <h4>Flask</h4>
+                </div>
+                <div class="skill"><i class="fa-solid fa-database"></i>
+                    <h4>MySQL</h4>
+                </div>
+                <div class="skill"><i class="fa-brands fa-html5"></i>
+                    <h4>HTML5</h4>
+                </div>
+                <div class="skill"><i class="fa-brands fa-css3-alt"></i>
+                    <h4>CSS3</h4>
+                </div>
+                <div class="skill"><i class="fa-brands fa-js"></i>
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="skill"><i class="fa-brands fa-git-alt"></i>
+                    <h4>Git</h4>
+                </div>
+                <div class="skill"><i class="fa-brands fa-github"></i>
+                    <h4>GitHub</h4>
+                </div>
+                <div class="skill"><i class="fa-solid fa-rocket"></i>
+                    <h4>Vercel</h4>
+                </div>
+                <div class="skill"><i class="fa-solid fa-cloud"></i>
+                    <h4>Render</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="grid">
+                <article class="card">
+                    <div class="card-head">
+                        <div class="p-icon"><i class="fa-solid fa-camera" aria-hidden="true"></i></div>
+                        <h3>BioGenerator</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>AI‑powered Instagram caption & bio generator that helps users craft engaging content quickly.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">AI</span>
+                        </div>
+                        <div class="links">
+                            <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- <article class="card">
+                    <div class="card-head">
+                        <div class="p-icon"><i class="fa-solid fa-gamepad" aria-hidden="true"></i></div>
+                        <h3>Bharat Gaming</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Esports platform for players to compete and win real rewards. Currently in final launch prep.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Payments</span>
+                        </div>
+                        <div class="links">
+                            <a class="btn" href="https://bharat-gaming.vercel.app/" target="_blank"
+                                rel="noopener noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-head">
+                        <div class="p-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
+                        <h3>Collabs</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Team collaboration tool with real‑time updates and task management.</p>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">WebSockets</span>
+                        </div>
+                        <div class="links">
+                            <a class="btn" href="https://github.com/CodewithRohitRajput/Collabs/" target="_blank"
+                                rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-head">
+                        <div class="p-icon"><i class="fa-solid fa-link" aria-hidden="true"></i></div>
+                        <h3>LinkNest</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Make a professional portfolio in minutes with ready templates.</p>
+                        <div class="tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                        <div class="links">
+                            <a class="btn" href="https://link-nest-green.vercel.app/" target="_blank"
+                                rel="noopener noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-head">
+                        <div class="p-icon"><i class="fa-regular fa-note-sticky" aria-hidden="true"></i></div>
+                        <h3>SecureNotez</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Cloud notes with a focus on privacy and availability.</p>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Encryption</span>
+                        </div>
+                        <div class="links">
+                            <a class="btn" href="https://securenotez-1.onrender.com/" target="_blank"
+                                rel="noopener noreferrer">Live Demo</a>
+                        </div>
+                    </div>
+                </article> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact">
+                <div class="c-info">
+                    <h3>Let's Connect</h3>
+                    <p>Open to freelance work, internships, and collabs. Tell me what you’re building — I’ll tell you
+                        how I can help.</p>
+
+                    <div class="c-row">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:mittalhardik2007@gmail.com">mittalhardik2007@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="c-row">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>India</p>
+                        </div>
+                    </div>
+
+                    <div class="c-row">
+                        <i class="fa-brands fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/Codewithmittalhardik/"
+                                    target="_blank">Codewithmittalhardik</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" method="POST" class="form" id="contactForm" novalidate>
+                    {% csrf_token %}
+
+                    <h3 style="margin-bottom:1rem">Send Me a Message</h3>
+
+                    {% if messages %}
+                    {% for message in messages %}
+                    <div
+                        style="background-color: #d1fae5; color: #065f46; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; border: 1px solid #34d399;">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+
+                    <div class="group">
+                        <label for="{{ form.name.id_for_label }}">Name</label>
+                        {{ form.name }} {% if form.name.errors %}
+                        <small style="color: red;">{{ form.name.errors.0 }}</small>
+                        {% endif %}
+                    </div>
+
+                    <div class="group">
+                        <label for="{{ form.email.id_for_label }}">Email</label>
+                        {{ form.email }}
+
+                        {% if form.email.errors %}
+                        <small style="color: red;">{{ form.email.errors.0 }}</small>
+                        {% endif %}
+                    </div>
+
+                    <div class="group">
+                        <label for="{{ form.message.id_for_label }}">Message</label>
+                        {{ form.message }}
+
+                        {% if form.message.errors %}
+                        <small style="color: red;">{{ form.message.errors.0 }}</small>
+                        {% endif %}
+                    </div>
+
+                    <button type="submit" class="btn" style="width:100%">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container foot">
+            <div class="social">
+                <a href="https://github.com/Codewithmittalhardik/" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mittalhardik/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://x.com/HardikMittal149" target="_blank" aria-label="Twitter"><i
+                        class="fab fa-twitter"></i></a>
+            </div>
+            <p class="copy">© 2025 Hardik Mittal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="{% static 'js/index.js' %}"></script>
+
+</body>
+
+</html>

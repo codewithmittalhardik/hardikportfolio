@@ -11,6 +11,16 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 import os
 from dotenv import load_dotenv
+import socket  # <--- Add this import
+
+# FIX FOR RENDER: Force IPv4
+# This prevents [Errno 101] Network is unreachable
+def getaddrinfo(*args, **kwargs):
+    responses = socket._original_getaddrinfo(*args, **kwargs)
+    return [res for res in responses if res[0] == socket.AF_INET]
+
+socket._original_getaddrinfo = socket.getaddrinfo
+socket.getaddrinfo = getaddrinfo
 
 load_dotenv()  # This loads the .env file
 from pathlib import Path

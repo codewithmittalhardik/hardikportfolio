@@ -148,3 +148,14 @@ EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
 
 # Change 'EMAIL_PASS' to 'EMAIL_HOST_PASSWORD'
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+# ... under your EMAIL_HOST_PASSWORD line ...
+
+if not EMAIL_HOST_USER:
+    print("CRITICAL ERROR: Email User is missing/empty!")
+
+if not EMAIL_HOST_PASSWORD:
+    print("CRITICAL ERROR: Email Password is missing/empty!")
+else:
+    print(f"DEBUG: Password length is {len(EMAIL_HOST_PASSWORD)} characters")
+
+EMAIL_TIMEOUT = 10

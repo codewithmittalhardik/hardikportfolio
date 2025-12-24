@@ -1,0 +1,88 @@
+# 👨‍💻 Hardik's Portfolio
+
+![Project Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+
+Welcome to the official repository for my personal portfolio website. This project is designed to showcase my skills, professional experience, and the projects I've built as a developer. It serves as a central hub for recruiters, clients, and fellow developers to connect with me.
+
+## 🚀 Live Demo
+
+**Check out the live website here:** [(https://hardiksportfolio.onrender.com](https://hardiksportfolio.onrender.com)
+
+---
+
+## 🧐 About
+
+This portfolio provides a comprehensive look into my work and technical background. It features:
+* **Hero Section:** A quick introduction to who I am.
+* **About Me:** Details about my education, journey, and interests.
+* **Skills:** A visual display of the technologies I work with.
+* **Projects:** A showcase of my best work with links to source code and live demos.
+* **Contact:** A way for visitors to get in touch with me directly.
+
+## 🛠️ Built With
+
+This project relies on the following technologies:
+
+### Frontend
+* ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) **HTML5** - For structure and semantic markup.
+* ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) **CSS3** - For styling and responsive layout.
+* ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) **JavaScript** - For interactivity and dynamic content.
+* ###Backend
+* ![Django]
+* ### Tools & Deployment
+* ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) **Git** - Version control.
+* ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) **GitHub Pages** - Hosting and deployment.
+
+## 🎨 Features
+
+* **Responsive Design:** Fully optimized for desktop, tablet, and mobile devices.
+* **Interactive UI:** Smooth scrolling, hover effects, and animations.
+* **Clean Codebase:** Well-structured HTML and CSS for easy maintenance.
+* **Contact Form:** Integrated for easy communication.
+
+## 💻 Getting Started
+
+To view or modify this project locally, follow these steps:
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/codewithmittalhardik/hardikportfolio.git](https://github.com/codewithmittalhardik/hardikportfolio.git)
+    ```
+
+2.  **Navigate to the project directory**
+    ```bash
+    cd hardikportfolio
+    ```
+
+3.  **Open the project**
+    * Run python3 manage.py runserver on Your Terminal.
+
+## 📂 Project Structure
+.
+├── .DS_Store
+├── .gitignore
+├── db.sqlite3
+├── manage.py
+├── requirement.txt
+├── portfoliodjango/
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── protfolio/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── static/
+│   ├── css/
+│   ├── images/
+│   └── js/
+└── template/
+    └── index.html

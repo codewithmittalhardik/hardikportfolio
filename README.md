@@ -59,6 +59,8 @@ To view or modify this project locally, follow these steps:
     ```
 
 3.  **Open the project**
+    * Run pip install -r requirement.txt.
+    * After Downloading all packages then 
     * Run python3 manage.py runserver on Your Terminal.
 
 ## 📂 Project Structure

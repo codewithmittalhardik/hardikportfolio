@@ -38,7 +38,7 @@ SECRET_KEY = 'django-insecure-503$hz+t*$+r2897t693za$3bsl!h*uqn@1*jsq9z28uuxv73-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hardiksportfolio.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['hardiksportfolio.onrender.com', 'localhost', '127.0.0.1', '0.0.0.0']
 
 
 # Application definition
@@ -152,7 +152,7 @@ EMAIL_PORT = 2525
 EMAIL_USE_TLS = True
 EMAIL_TIMEOUT = 30
 EMAIL_HOST_USER = 'mittalhardik2007@gmail.com'
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD') 
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS') 
 
 if not EMAIL_HOST_USER:
     print("CRITICAL ERROR: Email User is missing/empty!")

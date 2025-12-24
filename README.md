@@ -50,7 +50,7 @@ To view or modify this project locally, follow these steps:
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/codewithmittalhardik/hardikportfolio.git](https://github.com/codewithmittalhardik/hardikportfolio.git)
+    git clone https://github.com/codewithmittalhardik/hardikportfolio.git
     ```
 
 2.  **Navigate to the project directory**

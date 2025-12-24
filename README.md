@@ -7,7 +7,7 @@ Welcome to the official repository for my personal portfolio website. This proje
 
 ## 🚀 Live Demo
 
-**Check out the live website here:** [(https://hardiksportfolio.onrender.com](https://hardiksportfolio.onrender.com)
+**Check out the live website here:** [https://hardiksportfolio.onrender.com](https://hardiksportfolio.onrender.com)
 
 ---
 
